@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Applying custom background */
+@media screen and (max-width: 48rem) {
+  .bg-hero-day {
+    background-image: url('/mobile/bg-image-daytime.jpg');
+  }
+  .bg-hero-night {
+    background-image: url('/mobile/bg-image-nighttime.jpg');
+  }
+}
+@media screen and (min-width: 48rem) {
+  .bg-hero-day {
+    background-image: url('/tablet/bg-image-daytime.jpg');
+  }
+  .bg-hero-night {
+    background-image: url('/tablet/bg-image-nighttime.jpg');
+  }
+}
+@media screen and (min-width: 64rem) {
+  .bg-hero-day {
+    background-image: url('/desktop/bg-image-daytime.jpg');
+  }
+  .bg-hero-night {
+    background-image: url('/desktop/bg-image-nighttime.jpg');
+  }
+}
